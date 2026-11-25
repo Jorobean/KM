@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="KEMS (Kinetic Energy Management System) helps you capture everyday experiences, revisit meaningful moments, and turn them into something worth keeping or sharing.">
-  <title>KEMS | Record, Reflect and Create</title>
+  <meta name="description" content="KEMS Mirrors (Kinetic Energy Management System) is developing a mirror-based recording prototype for speech practice, video creation, dance rehearsal, and skill demonstrations.">
+  <title>KEMS Mirrors | Record while you look at your reflection</title>
   <link rel="canonical" href="https://getkems.com/">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="KEMS">
-  <meta property="og:title" content="KEMS | Record, Reflect and Create">
-  <meta property="og:description" content="KEMS (Kinetic Energy Management System) helps you capture everyday experiences, revisit meaningful moments, and turn them into something worth keeping or sharing.">
+  <meta property="og:site_name" content="KEMS Mirrors">
+  <meta property="og:title" content="KEMS Mirrors | Record while you look at your reflection">
+  <meta property="og:description" content="KEMS Mirrors (Kinetic Energy Management System) is developing a mirror-based recording prototype for speech practice, video creation, dance rehearsal, and skill demonstrations.">
   <meta property="og:url" content="https://getkems.com/">
   <meta property="og:image" content="https://getkems.com/kems-logo2.png">
-  <meta property="og:image:alt" content="KEMS logo">
+  <meta property="og:image:alt" content="KEMS Mirrors logo">
   <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
 {
@@ -22,15 +22,15 @@
     {
       "@type": "Organization",
       "@id": "https://getkems.com/#organization",
-      "name": "KEMS",
-      "alternateName": "Kinetic Energy Management System",
+      "name": "KEMS Mirrors",
+      "alternateName": ["KEMS", "Kinetic Energy Management System"],
       "url": "https://getkems.com/",
       "logo": "https://getkems.com/kems-logo2.png"
     },
     {
       "@type": "WebSite",
       "@id": "https://getkems.com/#website",
-      "name": "KEMS",
+      "name": "KEMS Mirrors",
       "alternateName": [
         "GetKEMS",
         "Kinetic Energy Management System"
@@ -48,15 +48,15 @@
   <link rel="apple-touch-icon" href="mirror-icon2-152.png">
   <link rel="apple-touch-icon" sizes="120x120" href="mirror-icon2-120.png">
   <link rel="apple-touch-icon" sizes="152x152" href="mirror-icon2-152.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="mirror-icon2-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="mirror-icon-192.png">
 
   <!-- Standard favicon fallback (Android/desktop) -->
-  <link rel="icon" type="image/png" sizes="192x192" href="mirror-icon2-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="mirror-icon2-512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="mirror-icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="mirror-icon-512.png">
 
   <!-- Makes it launch more like an app when added to home screen -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="KEMS">
+      <meta name="apple-mobile-web-app-title" content="KEMS Mirrors">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
   <style>
@@ -117,6 +117,41 @@
 
     p {
       margin: 0;
+    }
+
+    .updates-callout {
+      margin-top: 22px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border: 1px solid #d7d7d7;
+      border-radius: 8px;
+      background: var(--bg);
+    }
+    body.dark .updates-callout { border-color: #333; }
+    .updates-kicker { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; opacity: .68; }
+    .updates-title { margin-top: 4px; font-size: 16px; font-weight: 700; }
+    .updates-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+      min-height: 40px;
+      padding: 9px 13px;
+      border-radius: 6px;
+      background: var(--text);
+      color: var(--card);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .updates-button:hover { opacity: .82; }
+    .updates-button:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+    @media (max-width: 540px) {
+      .updates-callout { align-items: flex-start; flex-direction: column; gap: 12px; }
     }
 
     .header-account {
@@ -189,8 +224,16 @@
   </div>
 
   <main>
-    <section class="container introduction" id="about" aria-label="About KEMS">
+    <section class="container introduction" id="about" aria-label="About KEMS Mirrors">
       <p><strong>KEMS</strong> (Kinetic Energy Management System) helps you capture everyday experiences, revisit meaningful moments, and turn them into something worth keeping or sharing. We’re building a more personal way to record, reflect, and create.</p>
+    </section>
+
+    <section class="container updates-callout" aria-label="Latest KEMS Mirrors update">
+      <div>
+        <p class="updates-kicker">Latest update · November 25</p>
+        <p class="updates-title">KEMS Mirrors is looking for a cofounder.</p>
+      </div>
+      <a class="updates-button" href="updates.html#cofounder-opportunity">Read the update <span aria-hidden="true">→</span></a>
     </section>
 
     <section class="signup" id="early-access" aria-label="Early access signup">
@@ -201,16 +244,16 @@
           <button type="submit">Join the waitlist</button>
         </div>
         <div class="signup-trap" aria-hidden="true"><label for="signup-website">Website</label><input id="signup-website" name="website" tabindex="-1" autocomplete="off"></div>
-        <p class="signup-note">Sign up for KEMS early-access news.<br class="mobile-break"> You can unsubscribe anytime.</p>
+        <p class="signup-note">Sign up for KEMS Mirrors early-access news.<br class="mobile-break"> You can unsubscribe anytime.</p>
         <p id="signup-status" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
   <div class="footer">
-    <img src="kems-logo2.png" alt="KEMS logo" id="footer-logo-toggle">
+    <img src="kems-logo2.png" alt="KEMS Mirrors logo" id="footer-logo-toggle">
     <nav aria-label="Footer"><a href="updates.html">Updates</a><span class="footer-separator" aria-hidden="true">|</span><a href="mailto:hello@getkems.com">Contact</a></nav>
-    <p class="copyright">Copyright © <span id="copyright-year">2026</span> KEMS Corp. All rights reserved.</p>
+    <p class="copyright">Copyright © <span id="copyright-year">2026</span> KEMS Mirrors. All rights reserved.</p>
   </div>
 
   <script>
